@@ -155,6 +155,15 @@ h1, h2, h3, h4, h5 {
   background: linear-gradient(135deg, rgba(10,31,12,0.93) 0%, rgba(23,61,26,0.78) 50%, rgba(139,26,26,0.40) 100%);
 }
 
+/* Sub-page hero overlay (matches the HTML preview's .ph-overlay) */
+.page-hero-overlay {
+  background: linear-gradient(160deg, rgba(10,31,12,0.94) 0%, rgba(23,61,26,0.80) 60%, rgba(139,26,26,0.40) 100%);
+}
+.page-hero-eyebrow {
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+}
+.page-hero-eyebrow-line { width: 32px; height: 1px; background: var(--gold); }
+
 /* Hero diagonal bottom clip */
 .hero-clip::after {
   content: '';
