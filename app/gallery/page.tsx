@@ -29,12 +29,16 @@ export default function GalleryPage() {
 
   return (
     <>
-      <section className="relative h-72 flex items-center justify-center overflow-hidden">
+      <section className="relative h-[360px] flex items-center justify-center overflow-hidden">
         <Image src="/images/church-service-2.jpg" alt="Gallery" fill className="object-cover" />
-        <div className="absolute inset-0 bg-forest/80" />
+        <div className="absolute inset-0 page-hero-overlay" />
         <div className="relative z-10 text-center text-cream px-4">
-          <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">Memories & Moments</p>
-          <h1 className="font-display text-5xl font-bold">Photo Gallery</h1>
+          <div className="page-hero-eyebrow mb-4">
+            <span className="page-hero-eyebrow-line" />
+            <p className="text-gold text-xs tracking-widest uppercase font-sans">Memories & Moments</p>
+            <span className="page-hero-eyebrow-line" />
+          </div>
+          <h1 className="font-display text-4xl md:text-6xl font-bold tracking-wide">Photo Gallery</h1>
         </div>
       </section>
 
