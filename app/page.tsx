@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Heart, BookOpen, MapPin, Phone, ArrowRight } from "lucide-react";
+import { Calendar, Heart, BookOpen, MapPin, Phone, ArrowRight, CloudRain, Church, BookMarked } from "lucide-react";
 
 const events = [
-  { title: "Prayer Rain", date: "1st Saturday of Every Month", time: "7:00am", venue: "Prayer Cathedral, HQ", icon: "🌧️" },
-  { title: "Sunday Service", date: "Every Sunday", time: "7:00am – 9:30am", venue: "All Branches", icon: "⛪" },
-  { title: "Bible Study", date: "Every Wednesday", time: "5:00pm – 6:00pm", venue: "All Branches", icon: "📖" },
+  { title: "Prayer Rain", date: "1st Saturday of Every Month", time: "7:00am", venue: "Prayer Cathedral, HQ", icon: <CloudRain size={34} /> },
+  { title: "Sunday Service", date: "Every Sunday", time: "7:00am – 9:30am", venue: "All Branches", icon: <Church size={34} /> },
+  { title: "Bible Study", date: "Every Wednesday", time: "5:00pm – 6:00pm", venue: "All Branches", icon: <BookMarked size={34} /> },
 ];
 
 export default function HomePage() {
@@ -48,7 +48,7 @@ export default function HomePage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-forest-dark border-b border-gold/10 py-9 px-4">
+      <section className="bg-forest-dark border-b border-gold/10 py-9 px-4 md:px-10 lg:px-20">
         <div className="max-w-md mx-auto grid grid-cols-2 gap-6 text-center">
           {[
             ["8", "Active Branches"],
@@ -63,7 +63,7 @@ export default function HomePage() {
       </section>
 
       {/* WATCHWORD BANNER */}
-      <section className="bg-forest py-10 px-4">
+      <section className="bg-forest py-10 px-4 md:px-10 lg:px-20">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <Image src="/images/watchword.jpg" alt="2026 Watchword" width={260} height={200} className="rounded-lg border-4 border-gold object-cover shadow-xl" />
           <div className="text-cream text-center md:text-left">
@@ -76,7 +76,7 @@ export default function HomePage() {
       </section>
 
       {/* WELCOME FROM PASTOR */}
-      <section className="bg-cream-light py-20 px-4">
+      <section className="bg-cream-light py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">A Word from Our Shepherd</p>
@@ -113,7 +113,7 @@ export default function HomePage() {
       </section>
 
       {/* QUICK LINKS */}
-      <section className="bg-forest py-16 px-4">
+      <section className="bg-forest py-16 px-4 md:px-10 lg:px-20">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
@@ -133,7 +133,7 @@ export default function HomePage() {
       </section>
 
       {/* UPCOMING EVENTS */}
-      <section className="bg-cream py-20 px-4">
+      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Be Part of Something Greater</p>
@@ -143,7 +143,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto max-w-4xl mx-auto">
             {events.map((e) => (
               <div key={e.title} className="bg-cream-light border border-cream-dark rounded-lg p-6 card-hover reveal">
-                <div className="text-4xl mb-4 icon-hover-rotate">{e.icon}</div>
+                <div className="text-gold mb-4 icon-hover-rotate">{e.icon}</div>
                 <h3 className="font-display text-xl font-bold text-forest mb-2">{e.title}</h3>
                 <p className="text-crimson font-sans text-sm font-semibold mb-1">{e.date}</p>
                 <p className="text-gray-600 font-sans text-sm mb-1">{e.time}</p>
@@ -160,7 +160,7 @@ export default function HomePage() {
       </section>
 
       {/* GALLERY PREVIEW */}
-      <section className="bg-cream-dark py-20 px-4">
+      <section className="bg-cream-dark py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Life at Prayer Cathedral</p>
@@ -193,7 +193,7 @@ export default function HomePage() {
       </section>
 
       {/* CONTACT STRIP */}
-      <section className="bg-crimson py-10 px-4">
+      <section className="bg-crimson py-10 px-4 md:px-10 lg:px-20">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div>
             <h3 className="font-display text-2xl font-bold text-cream">Need to Reach Us?</h3>

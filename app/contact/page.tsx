@@ -35,7 +35,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4">
+      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14">
           {/* Form */}
           <div className="reveal">
@@ -127,15 +127,15 @@ export default function ContactPage() {
       </section>
 
       {/* Social strip */}
-      <section className="bg-forest-dark py-12 px-4">
+      <section className="bg-forest-dark py-12 px-4 md:px-10 lg:px-20">
         <div className="max-w-4xl mx-auto text-center reveal">
           <h3 className="font-display text-2xl font-bold text-cream mb-4">Follow Us Online</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.facebook.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors">📘 Facebook</a>
+            <a href="https://www.facebook.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg> Facebook</a>
             <span className="text-cream/30">|</span>
-            <a href="https://instagram.com/ovfa.prayerpalace" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors">📸 @ovfa.prayerpalace</a>
+            <a href="https://instagram.com/ovfa.prayerpalace" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg> @ovfa.prayerpalace</a>
             <span className="text-cream/30">|</span>
-            <a href="https://youtube.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors">▶️ YouTube</a>
+            <a href="https://youtube.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.9 5 12 5 12 5h0s-3.9 0-6.9.2c-.4 0-1.3.1-2.1.9C2.4 6.7 2.2 8.2 2.2 8.2S2 10 2 11.7v1.6c0 1.7.2 3.5.2 3.5s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.7.2 7.1.2 7.1.2s3.9 0 6.9-.2c.4 0 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.5v-1.6C22 10 21.8 8.2 21.8 8.2ZM9.9 14.9V8.9l5.4 3-5.4 3Z"/></svg> YouTube</a>
           </div>
         </div>
       </section>

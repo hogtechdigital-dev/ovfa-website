@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
-import { User, Lock, UserPlus } from "lucide-react";
+import { User, Lock, UserPlus, BookOpen, Megaphone, Wallet, Calendar } from "lucide-react";
 
 type Mode = "login" | "register";
 
@@ -58,7 +58,7 @@ export default function MembersPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4">
+      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-lg mx-auto">
           {/* How it works info box */}
           <div className="bg-cream-dark border-l-4 border-gold rounded-r-lg p-6 mb-8 reveal">
@@ -81,9 +81,14 @@ export default function MembersPage() {
               <h2 className="font-display text-3xl font-bold text-forest mb-1">Welcome, {memberData.name}!</h2>
               <p className="text-gold font-sans text-sm mb-6">Approved Member · Overcomers Family Assembly</p>
               <div className="grid grid-cols-2 gap-4 mb-8">
-                {[["📖 Devotionals", "/"], ["📢 Announcements", "/"], ["💰 Giving History", "/giving"], ["📅 Events", "/events"]].map(([l, h]) => (
-                  <a key={l} href={h} className="bg-cream rounded-lg p-4 text-forest font-sans text-sm font-semibold hover:bg-forest hover:text-cream transition-colors border border-cream-dark">
-                    {l}
+                {[
+                  { label: "Devotionals", href: "/", icon: <BookOpen size={18} /> },
+                  { label: "Announcements", href: "/", icon: <Megaphone size={18} /> },
+                  { label: "Giving History", href: "/giving", icon: <Wallet size={18} /> },
+                  { label: "Events", href: "/events", icon: <Calendar size={18} /> },
+                ].map((l) => (
+                  <a key={l.label} href={l.href} className="bg-cream rounded-lg p-4 text-forest font-sans text-sm font-semibold hover:bg-forest hover:text-cream transition-colors border border-cream-dark flex items-center justify-center gap-2">
+                    {l.icon} {l.label}
                   </a>
                 ))}
               </div>

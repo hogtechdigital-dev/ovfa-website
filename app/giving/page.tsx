@@ -41,14 +41,14 @@ export default function GivingPage() {
       </section>
 
       {/* Scripture */}
-      <section className="bg-forest py-10 px-4">
+      <section className="bg-forest py-10 px-4 md:px-10 lg:px-20">
         <div className="max-w-3xl mx-auto text-center text-cream reveal">
           <p className="font-display text-2xl italic">"Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over..."</p>
           <p className="text-gold text-sm font-sans mt-3">— Luke 6:38</p>
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4">
+      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14">
           {/* Form */}
           <div className="reveal">

@@ -42,7 +42,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4">
+      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           {/* Filter tabs */}
           <div className="flex flex-wrap gap-3 justify-center mb-12">
@@ -68,7 +68,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Video Section */}
-      <section className="bg-forest py-16 px-4">
+      <section className="bg-forest py-16 px-4 md:px-10 lg:px-20">
         <div className="max-w-4xl mx-auto text-center reveal">
           <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">Watch & Be Blessed</p>
           <h2 className="font-display text-4xl font-bold text-cream mb-4">Video Gallery</h2>

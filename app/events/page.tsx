@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock, MapPin, CloudRain, Church, BookMarked, HandHeart, Radio } from "lucide-react";
 
 const events = [
   {
@@ -11,7 +11,7 @@ const events = [
     venue: "Prayer Cathedral HQ (All branches converge here)",
     description: "An intercessory prayer session coupled with Holy Communion and Anointing. All branches converge at the headquarters as believers gather to pray for the nation, families, and personal breakthroughs. The atmosphere is always electric with God's presence.",
     color: "border-forest",
-    icon: "🌧️",
+    icon: <CloudRain size={34} />,
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const events = [
     venue: "Prayer Cathedral HQ & All 8 Branches",
     description: "Our flagship Sunday celebration service featuring dynamic worship, anointed preaching of the Word, and the move of the Holy Spirit.",
     color: "border-gold",
-    icon: "⛪",
+    icon: <Church size={34} />,
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const events = [
     venue: "All Branches",
     description: "Mid-week grounding in the Word of God. Practical, insightful, and life-transforming teachings to equip you for daily Kingdom living.",
     color: "border-crimson",
-    icon: "📖",
+    icon: <BookMarked size={34} />,
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const events = [
     venue: "All Branches",
     description: "Friday corporate prayer — targeting the week's needs, personal requests, and national intercession for the body of Christ.",
     color: "border-forest",
-    icon: "🙏",
+    icon: <HandHeart size={34} />,
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const events = [
     venue: "KU FM / Independent Radio, Benin City (15 States Coverage)",
     description: "Tune in to our radio outreach broadcast by Bishop Albert Asemota — bringing the Word of God to homes across Nigeria every Sunday morning.",
     color: "border-gold",
-    icon: "📻",
+    icon: <Radio size={34} />,
   },
 ];
 
@@ -75,7 +75,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4">
+      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Join the Move</p>
@@ -85,7 +85,7 @@ export default function EventsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {events.map((e) => (
               <div key={e.id} className={`bg-cream-light border-t-4 ${e.color} rounded-lg p-6 card-hover reveal shadow-sm`}>
-                <div className="text-4xl mb-3">{e.icon}</div>
+                <div className="text-gold mb-3">{e.icon}</div>
                 <span className="text-xs font-sans tracking-widest uppercase text-gray-500 bg-cream-dark px-2 py-0.5 rounded-full">{e.category}</span>
                 <h3 className="font-display text-2xl font-bold text-forest mt-3 mb-2">{e.title}</h3>
                 <p className="text-gray-700 font-sans text-sm leading-relaxed mb-4">{e.description}</p>
@@ -100,7 +100,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="bg-forest py-16 px-4">
+      <section className="bg-forest py-16 px-4 md:px-10 lg:px-20">
         <div className="max-w-3xl mx-auto text-center reveal">
           <h3 className="font-display text-3xl font-bold text-cream mb-4">Can't Make It In Person?</h3>
           <p className="text-cream/80 font-sans mb-6">Follow us on our social media pages for live streams, messages, and updates from Prayer Cathedral.</p>
