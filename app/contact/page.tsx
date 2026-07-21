@@ -22,16 +22,16 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="relative h-[360px] flex items-center justify-center overflow-hidden">
-        <Image src="/images/church-building.jpg" alt="Contact" fill className="object-cover" />
-        <div className="absolute inset-0 page-hero-overlay" />
-        <div className="relative z-10 text-center text-cream px-4">
-          <div className="page-hero-eyebrow mb-4">
-            <span className="page-hero-eyebrow-line" />
-            <p className="text-gold text-xs tracking-widest uppercase font-sans">Get in Touch</p>
-            <span className="page-hero-eyebrow-line" />
+      <section className="page-hero">
+        <Image src="/images/church-building.jpg" alt="Contact" fill className="ph-bg" />
+        <div className="ph-overlay" />
+        <div className="ph-content">
+          <div className="ph-eyebrow">
+            <span className="ph-line" />
+            Get in Touch
+            <span className="ph-line" />
           </div>
-          <h1 className="font-display text-4xl md:text-6xl font-bold tracking-wide">Contact Us</h1>
+          <h1 className="ph-title">Contact Us</h1>
         </div>
       </section>
 

@@ -12,39 +12,38 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-        <Image src="/images/church-building.jpg" alt="Prayer Cathedral" fill className="object-cover object-center" priority />
-        <div className="hero-overlay absolute inset-0" />
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-cream">
-          <p className="text-gold font-sans text-sm tracking-[0.35em] uppercase mb-6 animate-pulse_slow">Welcome to Prayer Cathedral</p>
-          {/* Big church logo with rotating ring */}
-          <div className="flex justify-center mb-7">
-            <div className="relative w-28 h-28 logo-ring">
-              <Image src="/images/church-logo.jpg" alt="OVFA Logo" width={112} height={112} className="w-28 h-28 rounded-full object-cover border-4 border-gold shadow-2xl relative z-10" />
+      <section className="hero">
+        <Image src="/images/church-building.jpg" alt="Prayer Cathedral" fill className="hero-bg" style={{ position: "absolute" }} priority />
+        <div className="hero-overlay" />
+        <div className="hero-stripes" />
+        <div className="hero-content">
+          <div className="hero-eyebrow">
+            <span className="hel" />
+            Prayer Cathedral · Founded in Faith
+            <span className="hel" />
+          </div>
+          <div className="hero-logo-wrap">
+            <div className="hero-logo-ring">
+              <Image src="/images/church-logo.jpg" alt="OVFA Logo" width={110} height={110} />
             </div>
           </div>
-          <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-2">
-            Overcomers
-          </h1>
-          {/* Church name in gold/white shimmer, not plain white */}
-          <span className="block font-display text-3xl md:text-5xl font-bold shimmer-text mb-1">Family Assembly</span>
-          <p className="font-playfair text-xl md:text-2xl italic shimmer-gold mb-8 mt-1 inline-block">International Inc.</p>
-          <p className="font-sans text-lg text-cream/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Reaching the world with the Gospel of the Kingdom.<br />
-            <span className="text-gold font-semibold">2026 – Year of Shining Brighter</span> · Proverbs 4:18
+          <h1 className="hero-h1">Overcomers</h1>
+          <span className="hero-church-name">Family Assembly</span>
+          <span className="hero-intl">International Inc.</span>
+          <div className="hero-vline" />
+          <p className="hero-tagline">
+            Reaching the world with the Gospel of the Kingdom
+            <br />
+            <strong>2026 – Year of Shining Brighter</strong> · Proverbs 4:18
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-crimson hover:bg-crimson-light text-cream font-sans font-bold px-8 py-4 rounded-sm tracking-widest uppercase text-sm transition-colors">
-              Join Us This Sunday
-            </Link>
-            <Link href="/about" className="border-2 border-gold text-gold hover:bg-gold hover:text-forest font-sans font-bold px-8 py-4 rounded-sm tracking-widest uppercase text-sm transition-colors">
-              Learn More
-            </Link>
+          <div className="hero-btns">
+            <Link href="/contact" className="btn btn-red">Join Us This Sunday</Link>
+            <Link href="/about" className="btn btn-ghost-gold">Discover Our Story</Link>
           </div>
         </div>
-        {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-cream/50 animate-bounce z-10">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/></svg>
+        <div className="hero-scroll">
+          <div className="hero-scroll-line" />
+          Scroll
         </div>
       </section>
 
