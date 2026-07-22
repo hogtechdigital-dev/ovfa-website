@@ -38,7 +38,7 @@ export default function AboutPage() {
       </section>
 
       {/* VISION & MISSION */}
-      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="reveal" style={{ borderLeft: "4px solid var(--crimson2)", paddingLeft: 24 }}>
@@ -71,7 +71,7 @@ export default function AboutPage() {
       </section>
 
       {/* CORE VALUES */}
-      <section className="bg-forest py-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20 grain" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--forest3) 100%)", position: "relative" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
             <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">What Drives Us</p>
@@ -94,7 +94,7 @@ export default function AboutPage() {
       </section>
 
       {/* HISTORY */}
-      <section className="section bg-cream-light">
+      <section className="section" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div className="section-inner" style={{ maxWidth: 820 }}>
           <div className="mb-14 reveal">
             <p className="label"><span className="ln" />The Chronicle</p>
@@ -110,7 +110,7 @@ export default function AboutPage() {
               { heading: "Running with the Vision", body: "With a vision of 'Reaching the world with the Gospel of the Kingdom,' the Visioneer knew he had a lot to do. He raised up men and women whom he constantly took on different training programmes so they could serve as his extended arms. He organised monthly programmes like Solution Night (every last Friday), Prayer Rain (every 1st Saturday), and series of leadership seminars. These have become a great blessing to thousands of individuals within and outside the country, and have been popularised by series of miracles associated with them.\n\nHe still saw the need to reach out to the larger society, hence the programme 'Voice of Overcomers' on KU FM every Sunday morning at 6:30am — a radio arm of Overcomers Family Assembly aired over 15 states in Nigeria. His aim: to reach out to all — big, small, poor, rich, humble, proud, simple and complex individuals alike.\n\nTo the glory of God, it has been a smooth ride. The church went into publication of tracts for evangelism and the Overcomers Devotional Manual. In these publications, topical spiritual issues are taught that aid, provide and direct humanity on the path of self-actualisation and preparedness to face the challenges of running the Christian race and await the second coming of our Lord Jesus Christ. Today, the church has expanded with eight (8) branches — six (6) in Benin City, Edo State, Nigeria, and two (2) in Germany." },
               { heading: "The Prayer Cathedral Building", body: "Overcomers Family Assembly was officially inaugurated on the 30th of January 2000 during her first year anniversary celebration by Bishop Charles Ighele of Holy Spirit Mission and presenter of the Marriage and Family Intimacy (MAFI) TV Programme. However, the owner of the property where the ministry started relocated the church to the back building near the toilet, and this led to the movement of the church to a leased land along Upper Sakponba Road, owned by Chief Eribo of Eribo Printers, for two years.\n\nOn the 20th of April 2004, the church took the bull by the horn. Faced with challenges from the leased land, she moved to her permanent site during her convention — then it was like a forest. There was a decline in membership, but the Visioneer took the challenges and went into a series of all-night prayer meetings, which is called 'Solution Night' today — a programme which has become a city of its own.\n\nOur father in the Lord, the President of Gospel Light International Ministries (GLIM) and President of the Pentecostal Fellowship of Nigeria (PFN), Most Rev. Dr. F. I. Omobude, laid the foundation of this edifice. To the glory of God, the hand that laid the foundation is the same hand that dedicated it — hallelujah! The beauty and uniqueness of every ministry is tied to the peculiarity of its shepherd; indeed, behind every successful church is a prayerful, hardworking, servant leader and a man of great God. Bishop Albert Amenaghawon Asemota is the man behind it. He is humble, unassuming, passionate and zealous for Kingdom business.\n\nIt is worthy to note that if it was not God who built this house, it would have taken many years to accomplish — but because He was involved, the project was completed in due season. Remarkably, in the period of six months — February to July — during the roofing, the rain did not affect a single service. It rained either before or after each service, but never during, until the roofing was completed. God is too wonderful and faithful!" },
             ].map((s, si) => (
-              <div key={s.heading} className="tl-item reveal">
+              <div key={s.heading} className={si % 2 === 0 ? "tl-item reveal-left" : "tl-item reveal-right"}>
                 <div className="tl-dot" />
                 <h3 className="tl-head">{s.heading}</h3>
                 {s.body.split("\n\n").map((para, i) => (
@@ -151,8 +151,7 @@ export default function AboutPage() {
               <h3 className="font-display text-3xl font-bold text-forest">Bishop Albert Ame Asemota</h3>
               <p className="text-gold font-sans text-sm tracking-wide uppercase mb-4">Founder & Presiding Bishop</p>
               <div className="text-gray-700 font-sans leading-relaxed space-y-3">
-                <p>He is married to Rev. (Mrs.) Queen Osayabamwen Asemota and they are blessed with four promising children. He is an ordained Minister, a consecrated Bishop, and a member of the United International Association of Pentecostal Bishops (UNIAPEB). He is also the State Treasurer,
-                Pentecostal Fellowship of Nigeria, Edo State.</p>
+                <p>He is married to Rev. (Mrs.) Queen Osayabamwen Asemota and they are blessed with four promising children. He is an ordained Minister, a consecrated Bishop, and a member of the United International Association of Pentecostal Bishops (UNIAPEB).</p>
                 <p>He has a passion to win souls for Christ and is committed to the Kingdom business. He is a seasoned preacher, an administrator per excellence and a man of integrity. His messages are honest, straight-out and modest. He is the Host of Voice of OVERCOMERS on KU FM in Benin City, Nigeria every Sunday Morning at 6:30am.</p>
                 <p>Bishop Albert presides over the following fellowships:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700">
@@ -179,7 +178,7 @@ export default function AboutPage() {
       </section>
 
       {/* BRANCHES */}
-      <section className="section bg-cream-dark">
+      <section className="section" style={{ background: "linear-gradient(160deg, #EFE9DC 0%, #E0D5C4 100%)" }}>
         <div className="section-inner">
           <div className="tc" style={{ marginBottom: 56 }}>
             <p className="label" style={{ justifyContent: "center" }}><span className="ln" />We Are Growing</p>
@@ -188,13 +187,17 @@ export default function AboutPage() {
             <p className="sec-sub tc">8 branches — 6 in Benin City, Nigeria &amp; 2 in Germany</p>
           </div>
           <div className="branches-grid">
-            {branches.map((b, i) => (
-              <div key={b.name} className={`branch-card${i >= 6 ? " intl" : ""}`}>
-                <div className="branch-icon">⛪</div>
-                <div className="branch-name">{b.name}</div>
-                <p className="branch-addr">{b.address}</p>
-              </div>
-            ))}
+            {branches.map((b, i) => {
+              const accents = ["var(--forest)", "var(--crimson2)", "var(--gold)"];
+              const accent = i >= 6 ? "var(--gold)" : accents[i % accents.length];
+              return (
+                <div key={b.name} className="branch-card reveal card-hover" style={{ borderTopColor: accent, transitionDelay: `${i * 60}ms` }}>
+                  <div className="branch-icon" style={{ background: `${accent}1a`, color: accent, width: 48, height: 48, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, marginBottom: 14 }}>⛪</div>
+                  <div className="branch-name">{b.name}</div>
+                  <p className="branch-addr">{b.address}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

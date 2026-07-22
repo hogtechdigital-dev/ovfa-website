@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Heart, BookOpen, MapPin, Phone, Mail, ArrowRight, CloudRain, Church, BookMarked, HandHeart } from "lucide-react";
 import StatCounter from "@/components/StatCounter";
+import WaveDivider from "@/components/WaveDivider";
 
 const events = [
   { title: "Prayer Rain", date: "1st Saturday Monthly", time: "7:00am – 9:00am", venue: "All Branches", icon: <CloudRain size={34} />, accent: "red" },
@@ -47,6 +48,9 @@ export default function HomePage() {
         <div className="hero-scroll">
           <div className="hero-scroll-line" />
           Scroll
+        </div>
+        <div style={{ position: "absolute", bottom: -1, left: 0, right: 0, zIndex: 6 }}>
+          <WaveDivider color="#0A1F0C" />
         </div>
       </section>
 

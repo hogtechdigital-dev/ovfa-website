@@ -42,7 +42,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           {/* Filter tabs */}
           <div className="flex flex-wrap gap-3 justify-center mb-12">

@@ -127,9 +127,13 @@ export default function GivingPage() {
             <div className="bg-cream-dark rounded-lg p-6" style={{ marginTop: 32 }}>
               <h4 className="font-display text-xl font-bold text-forest mb-3">Giving Categories</h4>
               <div className="flex flex-wrap gap-2">
-                {categories.map(c => (
-                  <span key={c} className="bg-gold text-forest-dark text-xs font-sans font-bold px-3 py-1.5 rounded-full">{c}</span>
-                ))}
+                {categories.map((c, i) => {
+                  const pillColors = ["var(--gold)", "var(--crimson2)", "var(--forest2)"];
+                  const bg = pillColors[i % pillColors.length];
+                  return (
+                    <span key={c} className="text-white text-xs font-sans font-bold px-3 py-1.5 rounded-full card-hover" style={{ background: bg }}>{c}</span>
+                  );
+                })}
               </div>
             </div>
 

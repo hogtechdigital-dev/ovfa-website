@@ -21,7 +21,7 @@ export default function RevealOnScroll() {
 
     // Small delay so the new page's DOM has painted before we query it.
     const id = requestAnimationFrame(() => {
-      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+      document.querySelectorAll(".reveal, .reveal-left, .reveal-right").forEach((el) => observer.observe(el));
     });
 
     return () => {

@@ -870,6 +870,10 @@ p, li, span:not(.tsep):not(.ph-line):not(.eline):not(.wb-cite):not(.gi-lbl):not(
 /* Scroll-reveal used by <RevealOnScroll /> across pages */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.75s ease, transform 0.75s ease; }
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.75s ease, transform 0.75s ease; }
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
 
 /* next/link renders <a>, mirror the .nav-links button rules for anchors */
 .nav-links a{font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(248,244,238,0.7);padding:8px 14px;background:none;border:none;cursor:pointer;position:relative;transition:color .2s;display:inline-block;}
