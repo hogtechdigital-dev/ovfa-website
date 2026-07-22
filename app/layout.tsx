@@ -6,9 +6,10 @@ import ScrollTicker from "@/components/ScrollTicker";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ovfa-website.vercel.app"), // TODO: update to your custom domain once it's live
+  metadataBase: new URL("https://www.overcomersfamilyassembly.org"),
   title: "Overcomers Family Assembly Int'l Inc. – Prayer Cathedral",
   description: "Reaching the world with the Gospel of the Kingdom. Join us at Prayer Cathedral, Benin City, Nigeria.",
   icons: { icon: "/images/church-logo.jpg" },
@@ -28,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ScrollTicker />
         <Navbar />
-        <main>{children}</main>
+        <main><PageTransition>{children}</PageTransition></main>
         <Footer />
         <WhatsAppButton />
         <BackToTop />

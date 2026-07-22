@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 // TODO: update to your custom domain once it's live
-const BASE_URL = "https://ovfa-website.vercel.app";
+const BASE_URL = "https://www.overcomersfamilyassembly.org";
 
 export default function robots(): MetadataRoute.Robots {
   return {

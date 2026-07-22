@@ -116,16 +116,17 @@ export default function HomePage() {
       </section>
 
       {/* QUICK LINKS */}
-      <section className="bg-forest py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div style={{ maxWidth: 1024, margin: "0 auto" }}>
+      <section className="py-16 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--forest3) 100%)", position: "relative" }}>
+        <div className="hero-blobs" style={{ opacity: 0.5 }} />
+        <div style={{ maxWidth: 1024, margin: "0 auto", position: "relative", zIndex: 2 }}>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { icon: <Calendar size={32}/>, title: "Upcoming Events", desc: "See what God has in store this season", href: "/events", btn: "View Events" },
               { icon: <Heart size={32}/>, title: "Give Online", desc: "Support the work of God's Kingdom", href: "/giving", btn: "Give Now" },
               { icon: <BookOpen size={32}/>, title: "Members Portal", desc: "Access resources and your dashboard", href: "/members", btn: "Sign In" },
             ].map((c) => (
-              <Link key={c.href} href={c.href} className="bg-forest-muted hover:bg-forest-dark card-hover rounded-lg p-8 text-center group transition-colors">
-                <div className="text-gold mb-4 flex justify-center">{c.icon}</div>
+              <Link key={c.href} href={c.href} className="glass-card card-hover rounded-lg p-8 text-center group transition-colors">
+                <div className="text-gold mb-4 flex justify-center icon-hover-rotate">{c.icon}</div>
                 <h3 className="font-display text-xl font-bold text-cream mb-2">{c.title}</h3>
                 <p className="text-cream/70 text-sm font-sans mb-5">{c.desc}</p>
                 <span className="text-gold border border-gold text-sm font-sans font-bold px-5 py-2 rounded-sm tracking-wide group-hover:bg-gold group-hover:text-forest transition-colors">{c.btn}</span>
@@ -177,7 +178,7 @@ export default function HomePage() {
               { src: "/images/old-school-day.jpg", alt: "Old School Day 2026" },
               { src: "/images/church-building-2.jpg", alt: "Church Building" },
             ].map((img) => (
-              <div key={img.src} className="relative h-48 md:h-56 overflow-hidden rounded-lg group">
+              <div key={img.src} className="relative h-48 md:h-56 overflow-hidden rounded-lg group duotone">
                 <Image src={img.src} alt={img.alt} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-forest/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <p className="text-cream font-sans text-sm">{img.alt}</p>
