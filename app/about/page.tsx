@@ -151,7 +151,8 @@ export default function AboutPage() {
               <h3 className="font-display text-3xl font-bold text-forest">Bishop Albert Ame Asemota</h3>
               <p className="text-gold font-sans text-sm tracking-wide uppercase mb-4">Founder & Presiding Bishop</p>
               <div className="text-gray-700 font-sans leading-relaxed space-y-3">
-                <p>He is married to Rev. (Mrs.) Queen Osayabamwen Asemota and they are blessed with four promising children. He is an ordained Minister, a consecrated Bishop, and a member of the United International Association of Pentecostal Bishops (UNIAPEB).</p>
+                <p>He is married to Rev. (Mrs.) Queen Osayabamwen Asemota and they are blessed with four promising children. He is an ordained Minister, a consecrated Bishop, and a member of the United International Association of Pentecostal Bishops (UNIAPEB). He is also the State Treasurer,
+                Pentecostal Fellowship of Nigeria, Edo State.</p>
                 <p>He has a passion to win souls for Christ and is committed to the Kingdom business. He is a seasoned preacher, an administrator per excellence and a man of integrity. His messages are honest, straight-out and modest. He is the Host of Voice of OVERCOMERS on KU FM in Benin City, Nigeria every Sunday Morning at 6:30am.</p>
                 <p>Bishop Albert presides over the following fellowships:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700">
