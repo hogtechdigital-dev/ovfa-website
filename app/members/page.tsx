@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
-import { User, Lock, UserPlus, BookOpen, Megaphone, Wallet, Calendar } from "lucide-react";
+import { User, Lock, UserPlus, BookOpen, Megaphone, Wallet, Calendar, Info } from "lucide-react";
 
 type Mode = "login" | "register";
 
@@ -58,11 +58,11 @@ export default function MembersPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div style={{ maxWidth: 512, margin: "0 auto" }}>
           {/* How it works info box */}
-          <div className="bg-cream-dark border-l-4 border-gold rounded-r-lg p-6 mb-8 reveal">
-            <h4 className="font-display text-lg font-bold text-forest mb-2">ℹ️ How the Members Portal Works</h4>
+          <div className="bg-cream-dark border-l-4 border-gold rounded-2xl p-6 mb-8 reveal card-hover" style={{ boxShadow: "0 4px 20px rgba(23,61,26,0.06)" }}>
+            <h4 className="font-display text-lg font-bold text-forest mb-2 flex items-center gap-2"><Info size={18} className="text-gold" />How the Members Portal Works</h4>
             <p className="text-sm font-sans text-gray-700 leading-relaxed">
               <strong>New members:</strong> Click <em>Register</em>, fill in your details and submit. Your account will show as <em>pending</em> until the admin approves it — you&apos;ll be notified by email once approved.
             </p>

@@ -41,19 +41,19 @@ export default function GivingPage() {
       </section>
 
       {/* Scripture */}
-      <section className="bg-forest py-10 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-10 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--forest3) 100%)" }}>
         <div className="text-center text-cream reveal" style={{ maxWidth: 768, margin: "0 auto" }}>
           <p className="font-display text-2xl italic">"Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over..."</p>
           <p className="text-gold text-sm font-sans mt-3">— Luke 6:38</p>
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div className="grid lg:grid-cols-2 gap-14" style={{ maxWidth: 1152, margin: "0 auto" }}>
           {/* Form */}
           <div className="reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Online Giving</p>
-            <h2 className="font-display text-4xl font-bold text-forest mb-6">Make a Donation</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-forest mb-6">Make a Donation</h2>
             <div className="divider" style={{margin:"0 0 2rem"}}></div>
 
             {submitted ? (
@@ -107,7 +107,7 @@ export default function GivingPage() {
           <div className="space-y-8 reveal">
             <div>
               <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Alternative</p>
-              <h2 className="font-display text-4xl font-bold text-forest mb-6">Bank Transfer</h2>
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-forest mb-6">Bank Transfer</h2>
               <div className="divider" style={{margin:"0 0 2rem"}}></div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>

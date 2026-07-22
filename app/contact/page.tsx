@@ -35,12 +35,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div className="grid lg:grid-cols-2 gap-14" style={{ maxWidth: 1152, margin: "0 auto" }}>
           {/* Form */}
           <div className="reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Send a Message</p>
-            <h2 className="font-display text-4xl font-bold text-forest mb-6">We'd Love to Hear from You</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-forest mb-6">We'd Love to Hear from You</h2>
             <div className="divider" style={{margin:"0 0 2rem"}}></div>
             {submitted ? (
               <div className="bg-forest/10 border border-forest rounded-lg p-8 text-center">
@@ -84,7 +84,7 @@ export default function ContactPage() {
           <div className="space-y-8 reveal">
             <div>
               <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Reach Us Directly</p>
-              <h2 className="font-display text-4xl font-bold text-forest mb-6">Contact Information</h2>
+              <h2 className="font-display text-4xl md:text-5xl font-bold text-forest mb-6">Contact Information</h2>
               <div className="divider" style={{margin:"0 0 2rem"}}></div>
             </div>
             {[

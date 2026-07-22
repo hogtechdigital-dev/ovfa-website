@@ -75,17 +75,19 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Join the Move</p>
-            <h2 className="font-display text-4xl font-bold text-forest">Regular Programmes</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-forest">Regular Programmes</h2>
             <div className="divider"></div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {events.map((e) => (
-              <div key={e.id} className={`bg-cream-light border-t-4 ${e.color} rounded-lg p-6 card-hover reveal shadow-sm`}>
-                <div className="text-gold mb-3">{e.icon}</div>
+              <div key={e.id} className={`bg-cream-light border-t-4 ${e.color} rounded-2xl p-7 card-hover reveal`} style={{ boxShadow: "0 4px 20px rgba(23,61,26,0.08)" }}>
+                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 icon-hover-rotate" style={{ background: "rgba(184,146,42,0.12)" }}>
+                  <span className="text-gold">{e.icon}</span>
+                </div>
                 <span className="text-xs font-sans tracking-widest uppercase text-gray-500 bg-cream-dark px-2 py-0.5 rounded-full">{e.category}</span>
                 <h3 className="font-display text-2xl font-bold text-forest mt-3 mb-2">{e.title}</h3>
                 <p className="text-gray-700 font-sans text-sm leading-relaxed mb-4">{e.description}</p>
@@ -100,7 +102,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="bg-forest py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="py-16 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--forest3) 100%)" }}>
         <div className="text-center reveal" style={{ maxWidth: 768, margin: "0 auto" }}>
           <h3 className="font-display text-3xl font-bold text-cream mb-4">Can't Make It In Person?</h3>
           <p className="text-cream/80 font-sans mb-6">Follow us on our social media pages for live streams, messages, and updates from Prayer Cathedral.</p>
