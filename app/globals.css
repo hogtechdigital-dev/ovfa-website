@@ -874,6 +874,9 @@ p, li, span:not(.tsep):not(.ph-line):not(.eline):not(.wb-cite):not(.gi-lbl):not(
 .nav-links a:hover,.nav-links a.active{color:var(--gold2);}
 .nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1);}
 .nav-give{display:inline-block;}
+.social-fb:hover{background:#1877F2!important;color:#fff!important;}
+.social-ig:hover{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)!important;color:#fff!important;}
+.social-yt:hover{background:#FF0000!important;color:#fff!important;}
 @media (max-width: 768px) {
   .nav-links a{width:100%;text-align:left;padding:14px 8px;border-bottom:1px solid rgba(184,146,42,0.08);font-size:13px;}
   .nav-links a::after{display:none;}

@@ -39,7 +39,7 @@ export default function AboutPage() {
 
       {/* VISION & MISSION */}
       <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="reveal" style={{ borderLeft: "4px solid var(--crimson2)", paddingLeft: 24 }}>
               <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Our Compass</p>
@@ -72,7 +72,7 @@ export default function AboutPage() {
 
       {/* CORE VALUES */}
       <section className="bg-forest py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
             <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">What Drives Us</p>
             <h2 className="font-display text-4xl font-bold text-cream">Core Values</h2>
@@ -124,10 +124,10 @@ export default function AboutPage() {
 
       {/* ANTHEM */}
       <section className="bg-crimson py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-2xl mx-auto text-center text-cream reveal">
+        <div className="text-center text-cream reveal" style={{ maxWidth: 672, margin: "0 auto" }}>
           <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">Sing With Us</p>
           <h2 className="font-display text-4xl font-bold mb-6">Overcomers Anthem</h2>
-          <div className="bg-crimson-dark rounded-lg p-8 font-display text-xl italic leading-loose">
+          <div className="bg-crimson-dark rounded-lg p-8 font-display text-2xl md:text-3xl italic leading-loose">
             <p>We have overcome,<br />We have overcome,<br />We have overcome by the blood of the Lamb.<br />And our testimony,<br />We have overcome by the blood.</p>
             <p className="mt-4">Overcomers, yes that's what we are<br />Family, yes that's what we are<br />Assembly, oh yes,<br />We have overcome by the blood.</p>
           </div>
@@ -136,7 +136,7 @@ export default function AboutPage() {
 
       {/* MEET THE BISHOP */}
       <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
-        <div className="max-w-6xl mx-auto">
+        <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Meet Our Leaders</p>
             <h2 className="font-display text-4xl font-bold text-forest">The Bishop & His Wife</h2>

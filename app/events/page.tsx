@@ -76,7 +76,7 @@ export default function EventsPage() {
       </section>
 
       <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Join the Move</p>
             <h2 className="font-display text-4xl font-bold text-forest">Regular Programmes</h2>
@@ -101,7 +101,7 @@ export default function EventsPage() {
       </section>
 
       <section className="bg-forest py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-3xl mx-auto text-center reveal">
+        <div className="text-center reveal" style={{ maxWidth: 768, margin: "0 auto" }}>
           <h3 className="font-display text-3xl font-bold text-cream mb-4">Can't Make It In Person?</h3>
           <p className="text-cream/80 font-sans mb-6">Follow us on our social media pages for live streams, messages, and updates from Prayer Cathedral.</p>
           <div className="flex flex-wrap justify-center gap-4">

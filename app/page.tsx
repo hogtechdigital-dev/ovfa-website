@@ -50,7 +50,7 @@ export default function HomePage() {
 
       {/* STATS BAR */}
       <section className="bg-forest-dark border-b border-gold/10 py-9 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-md mx-auto grid grid-cols-2 gap-6 text-center">
+        <div className="grid grid-cols-2 gap-6 text-center" style={{ maxWidth: 448, margin: "0 auto" }}>
           {[
             ["8", "Active Branches"],
             ["25+", "Years of Ministry"],
@@ -65,7 +65,7 @@ export default function HomePage() {
 
       {/* WATCHWORD BANNER */}
       <section className="bg-forest py-10 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-8" style={{ maxWidth: 1024, margin: "0 auto" }}>
           <Image src="/images/watchword.jpg" alt="2026 Watchword" width={260} height={200} className="rounded-lg border-4 border-gold object-cover shadow-xl" />
           <div className="text-cream text-center md:text-left">
             <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">Our Annual Theme</p>
@@ -78,7 +78,7 @@ export default function HomePage() {
 
       {/* WELCOME FROM PASTOR */}
       <section className="bg-cream-light py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">A Word from Our Shepherd</p>
             <h2 className="font-display text-4xl font-bold text-forest">Welcome Message</h2>
@@ -115,7 +115,7 @@ export default function HomePage() {
 
       {/* QUICK LINKS */}
       <section className="bg-forest py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-5xl mx-auto">
+        <div style={{ maxWidth: 1024, margin: "0 auto" }}>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { icon: <Calendar size={32}/>, title: "Upcoming Events", desc: "See what God has in store this season", href: "/events", btn: "View Events" },

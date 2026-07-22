@@ -42,14 +42,14 @@ export default function GivingPage() {
 
       {/* Scripture */}
       <section className="bg-forest py-10 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-3xl mx-auto text-center text-cream reveal">
+        <div className="text-center text-cream reveal" style={{ maxWidth: 768, margin: "0 auto" }}>
           <p className="font-display text-2xl italic">"Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over..."</p>
           <p className="text-gold text-sm font-sans mt-3">— Luke 6:38</p>
         </div>
       </section>
 
       <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14">
+        <div className="grid lg:grid-cols-2 gap-14" style={{ maxWidth: 1152, margin: "0 auto" }}>
           {/* Form */}
           <div className="reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Online Giving</p>
@@ -110,19 +110,21 @@ export default function GivingPage() {
               <h2 className="font-display text-4xl font-bold text-forest mb-6">Bank Transfer</h2>
               <div className="divider" style={{margin:"0 0 2rem"}}></div>
             </div>
-            {[
-              { bank: "Above Only Microfinance Bank", acct: "110 003 6579", name: "OVERCOMERS FAMILY ASSEMBLY" },
-              { bank: "First Bank Nigeria", acct: "2014292387", name: "OVERCOMERS FAMILY ASSEMBLY INT'L" },
-              { bank: "Zenith Bank", acct: "1010499965", name: "OVERCOMERS FAMILY ASSEMBLY" },
-            ].map((a) => (
-              <div key={a.acct} className="bg-forest rounded-lg p-6 text-cream">
-                <p className="text-gold text-xs tracking-widest uppercase font-sans mb-3">{a.bank}</p>
-                <p className="font-display text-3xl font-bold tracking-widest mb-1">{a.acct}</p>
-                <p className="text-cream/80 font-sans text-sm">{a.name}</p>
-              </div>
-            ))}
+            <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+              {[
+                { bank: "Above Only Microfinance Bank", acct: "110 003 6579", name: "OVERCOMERS FAMILY ASSEMBLY" },
+                { bank: "First Bank Nigeria", acct: "2014292387", name: "OVERCOMERS FAMILY ASSEMBLY INT'L" },
+                { bank: "Zenith Bank", acct: "1010499965", name: "OVERCOMERS FAMILY ASSEMBLY" },
+              ].map((a) => (
+                <div key={a.acct} className="bg-forest rounded-lg p-6 text-cream">
+                  <p className="text-gold text-xs tracking-widest uppercase font-sans mb-3">{a.bank}</p>
+                  <p className="font-display text-3xl font-bold tracking-widest mb-1">{a.acct}</p>
+                  <p className="text-cream/80 font-sans text-sm">{a.name}</p>
+                </div>
+              ))}
+            </div>
 
-            <div className="bg-cream-dark rounded-lg p-6">
+            <div className="bg-cream-dark rounded-lg p-6" style={{ marginTop: 32 }}>
               <h4 className="font-display text-xl font-bold text-forest mb-3">Giving Categories</h4>
               <div className="flex flex-wrap gap-2">
                 {categories.map(c => (

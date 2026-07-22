@@ -59,7 +59,7 @@ export default function MembersPage() {
       </section>
 
       <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-lg mx-auto">
+        <div style={{ maxWidth: 512, margin: "0 auto" }}>
           {/* How it works info box */}
           <div className="bg-cream-dark border-l-4 border-gold rounded-r-lg p-6 mb-8 reveal">
             <h4 className="font-display text-lg font-bold text-forest mb-2">ℹ️ How the Members Portal Works</h4>

@@ -20,8 +20,9 @@ const YTIcon = () => (
 
 export default function Footer() {
   return (
-    <footer className="bg-forest-dark text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="text-white" style={{ background: "linear-gradient(160deg, #0E2410 0%, #173D1A 100%)", position: "relative" }}>
+      <div style={{ height: 4, background: "linear-gradient(90deg, var(--gold2), var(--crimson2), var(--gold2))" }} />
+      <div className="px-4 sm:px-8 md:px-12 lg:px-20 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" style={{ maxWidth: 1280, margin: "0 auto" }}>
 
         {/* Brand */}
         <div>
@@ -35,12 +36,12 @@ export default function Footer() {
           <p className="text-white/80 text-sm leading-relaxed font-sans italic">&ldquo;Reaching the world with the Gospel of the Kingdom&rdquo; — Matt. 24:14</p>
           <div className="flex gap-3 mt-5">
             {[
-              { href: "https://www.facebook.com/overcomersfamilyassembly", icon: <FBIcon /> },
-              { href: "https://www.instagram.com/prayer_cathedral", icon: <IGIcon /> },
-              { href: "https://www.youtube.com/@overcomersfamilyassembly2072", icon: <YTIcon /> },
+              { href: "https://www.facebook.com/overcomersfamilyassembly", icon: <FBIcon />, cls: "social-fb" },
+              { href: "https://www.instagram.com/prayer_cathedral", icon: <IGIcon />, cls: "social-ig" },
+              { href: "https://www.youtube.com/@overcomersfamilyassembly2072", icon: <YTIcon />, cls: "social-yt" },
             ].map((s, i) => (
               <a key={i} href={s.href} target="_blank" rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-forest flex items-center justify-center text-gold hover:bg-gold hover:text-forest transition-colors">
+                className={`w-9 h-9 rounded-full bg-forest flex items-center justify-center text-gold transition-colors ${s.cls}`}>
                 {s.icon}
               </a>
             ))}

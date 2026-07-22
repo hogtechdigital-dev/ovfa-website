@@ -36,7 +36,7 @@ export default function ContactPage() {
       </section>
 
       <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14">
+        <div className="grid lg:grid-cols-2 gap-14" style={{ maxWidth: 1152, margin: "0 auto" }}>
           {/* Form */}
           <div className="reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Send a Message</p>

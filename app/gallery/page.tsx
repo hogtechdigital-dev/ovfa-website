@@ -43,7 +43,7 @@ export default function GalleryPage() {
       </section>
 
       <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           {/* Filter tabs */}
           <div className="flex flex-wrap gap-3 justify-center mb-12">
             {cats.map(c => (
@@ -64,20 +64,6 @@ export default function GalleryPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Video Section */}
-      <section className="bg-forest py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="max-w-4xl mx-auto text-center reveal">
-          <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">Watch & Be Blessed</p>
-          <h2 className="font-display text-4xl font-bold text-cream mb-4">Video Gallery</h2>
-          <div className="divider"></div>
-          <p className="text-cream/80 font-sans mt-4 mb-8">Watch sermons, testimonies, and programme recordings on our YouTube channel.</p>
-          <a href="https://youtube.com/overcomersfamilyassembly" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-[#FF0000] text-white font-sans font-bold px-8 py-4 rounded-sm tracking-widest uppercase text-sm hover:opacity-90 transition">
-            <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            Visit Our YouTube Channel
-          </a>
         </div>
       </section>
 
