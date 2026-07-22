@@ -874,6 +874,50 @@ p, li, span:not(.tsep):not(.ph-line):not(.eline):not(.wb-cite):not(.gi-lbl):not(
 .nav-links a:hover,.nav-links a.active{color:var(--gold2);}
 .nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1);}
 .nav-give{display:inline-block;}
+
+/* ============ Previously referenced but undefined — now implemented ============ */
+.card-hover{transition:transform .35s ease, box-shadow .35s ease;}
+.card-hover:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(10,31,12,0.28);}
+
+.shimmer-text{
+  background:linear-gradient(90deg, var(--gold3) 0%, #fff 25%, var(--gold3) 50%, #fff 75%, var(--gold3) 100%);
+  background-size:200% auto;
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  animation:shimmer 4s linear infinite;
+}
+
+.icon-hover-rotate{transition:transform .4s ease;}
+.card-hover:hover .icon-hover-rotate, a:hover > .icon-hover-rotate{transform:rotate(-8deg) scale(1.08);}
+
+/* ============ Modern polish additions ============ */
+
+/* Fine grain texture for dark sections — adds depth instead of flat color */
+.grain::after{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:0.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Drifting gradient blobs behind the hero */
+.hero-blobs{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;}
+.hero-blobs::before,.hero-blobs::after{
+  content:'';position:absolute;border-radius:50%;filter:blur(70px);opacity:0.35;
+}
+.hero-blobs::before{width:420px;height:420px;background:radial-gradient(circle, var(--gold2), transparent 70%);top:-10%;left:-8%;animation:blobDrift1 22s ease-in-out infinite;}
+.hero-blobs::after{width:380px;height:380px;background:radial-gradient(circle, var(--crimson2), transparent 70%);bottom:-12%;right:-6%;animation:blobDrift2 26s ease-in-out infinite;}
+@keyframes blobDrift1{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(60px,40px) scale(1.15);}}
+@keyframes blobDrift2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-50px,-30px) scale(1.1);}}
+
+/* Drop cap for editorial-style opening paragraphs */
+.drop-cap::first-letter{
+  font-family:'Cinzel',serif; font-weight:900; color:var(--gold); float:left;
+  font-size:64px; line-height:0.8; padding-right:10px; padding-top:6px;
+}
+
+/* Count-up stat number wrapper (used by StatCounter component) */
+.stat-count{font-variant-numeric:tabular-nums;}
+
+/* Staggered reveal delays for grids — apply .stagger to a container, children get index-based delay */
+.stagger > *{transition-delay:calc(var(--i, 0) * 90ms);}
 .social-fb:hover{background:#1877F2!important;color:#fff!important;}
 .social-ig:hover{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)!important;color:#fff!important;}
 .social-yt:hover{background:#FF0000!important;color:#fff!important;}

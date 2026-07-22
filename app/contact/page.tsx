@@ -127,7 +127,7 @@ export default function ContactPage() {
       </section>
 
       {/* Social strip */}
-      <section className="section bg-forest">
+      <section className="section bg-forest grain" style={{ position: "relative" }}>
         <div className="section-inner tc">
           <p className="label gl" style={{ justifyContent: "center" }}><span className="ln" />Can&apos;t Make It In Person?</p>
           <h2 className="sec-title light tc">Follow Us <em style={{ color: "var(--gold)" }}>Online</em></h2>

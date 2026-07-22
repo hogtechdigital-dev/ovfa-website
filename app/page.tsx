@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Heart, BookOpen, MapPin, Phone, Mail, ArrowRight, CloudRain, Church, BookMarked, HandHeart } from "lucide-react";
+import StatCounter from "@/components/StatCounter";
 
 const events = [
   { title: "Prayer Rain", date: "1st Saturday Monthly", time: "7:00am – 9:00am", venue: "All Branches", icon: <CloudRain size={34} />, accent: "red" },
@@ -16,6 +17,7 @@ export default function HomePage() {
       <section className="hero">
         <Image src="/images/church-building.jpg" alt="Prayer Cathedral" fill className="hero-bg" style={{ position: "absolute" }} priority />
         <div className="hero-overlay" />
+        <div className="hero-blobs" />
         <div className="hero-stripes" />
         <div className="hero-content">
           <div className="hero-eyebrow">
@@ -56,7 +58,7 @@ export default function HomePage() {
             ["25+", "Years of Ministry"],
           ].map(([num, label]) => (
             <div key={label} className="px-4 border-r border-gold/10 last:border-r-0">
-              <p className="font-bebas text-4xl text-gold-light stat-glow leading-none mb-1">{num}</p>
+              <StatCounter value={num} label={label} />
               <p className="text-cream/40 font-sans text-[10px] tracking-[0.24em] uppercase">{label}</p>
             </div>
           ))}
@@ -142,8 +144,8 @@ export default function HomePage() {
             <div className="divbar c" />
           </div>
           <div className="evp-grid four">
-            {events.map((e) => (
-              <div key={e.title} className={`evp-card${e.accent ? " " + e.accent : ""}`}>
+            {events.map((e, i) => (
+              <div key={e.title} className={`evp-card reveal${e.accent ? " " + e.accent : ""}`} style={{ transitionDelay: `${i * 100}ms` }}>
                 <span className="evp-icon" style={{ color: "var(--gold)" }}>{e.icon}</span>
                 <h3 className="evp-title">{e.title}</h3>
                 <p className="evp-date">{e.date}</p>
@@ -159,7 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* GALLERY PREVIEW */}
-      <section className="section bg-dark">
+      <section className="section bg-dark grain" style={{ position: "relative" }}>
         <div className="section-inner">
           <div className="tc" style={{ marginBottom: 52 }}>
             <p className="label gl" style={{ justifyContent: "center" }}><span className="ln" />Life at Prayer Cathedral</p>

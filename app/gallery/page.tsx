@@ -87,7 +87,7 @@ export default function GalleryPage() {
       )}
 
       {/* VIDEO GALLERY */}
-      <section className="section bg-dark">
+      <section className="section bg-dark grain" style={{ position: "relative" }}>
         <div className="section-inner tc">
           <p className="label gl" style={{ justifyContent: "center" }}><span className="ln" />Watch &amp; Be Blessed</p>
           <h2 className="sec-title light tc">Video <em style={{ color: "var(--gold)" }}>Gallery</em></h2>

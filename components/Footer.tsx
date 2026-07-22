@@ -20,7 +20,7 @@ const YTIcon = () => (
 
 export default function Footer() {
   return (
-    <footer className="text-white" style={{ background: "linear-gradient(160deg, #0E2410 0%, #173D1A 100%)", position: "relative" }}>
+    <footer className="text-white grain" style={{ background: "linear-gradient(160deg, #0E2410 0%, #173D1A 100%)", position: "relative" }}>
       <div style={{ height: 4, background: "linear-gradient(90deg, var(--gold2), var(--crimson2), var(--gold2))" }} />
       <div className="px-4 sm:px-8 md:px-12 lg:px-20 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" style={{ maxWidth: 1280, margin: "0 auto" }}>
 
