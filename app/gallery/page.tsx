@@ -56,7 +56,7 @@ export default function GalleryPage() {
           {/* Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {filtered.map((p, i) => (
-              <div key={p.src} className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group duotone" onClick={() => setLightbox(i)}>
+              <div key={p.src} className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group" onClick={() => setLightbox(i)}>
                 <Image src={p.src} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-forest/0 group-hover:bg-forest/50 transition-colors flex items-end p-3">
                   <p className="text-cream text-xs font-sans opacity-0 group-hover:opacity-100 transition-opacity">{p.title}</p>
