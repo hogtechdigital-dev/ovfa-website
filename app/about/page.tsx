@@ -41,7 +41,7 @@ export default function AboutPage() {
       <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="reveal">
+            <div className="reveal" style={{ borderLeft: "4px solid var(--crimson2)", paddingLeft: 24 }}>
               <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Our Compass</p>
               <h2 className="font-display text-4xl font-bold text-forest mb-4">Vision</h2>
               <div className="divider" style={{margin:"1rem 0"}}></div>
@@ -50,7 +50,7 @@ export default function AboutPage() {
               </p>
               <p className="text-gray-500 font-sans text-sm mt-3">— Matthew 24:14</p>
             </div>
-            <div className="reveal">
+            <div className="reveal" style={{ borderLeft: "4px solid var(--gold2)", paddingLeft: 24 }}>
               <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Our Purpose</p>
               <h2 className="font-display text-4xl font-bold text-forest mb-4">Mission</h2>
               <div className="divider" style={{margin:"1rem 0"}}></div>
@@ -79,12 +79,16 @@ export default function AboutPage() {
             <div className="divider"></div>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {values.map((v) => (
-              <div key={v.title} className="bg-forest-muted rounded-lg p-6 border border-gold/20 card-hover reveal">
-                <h3 className="font-display text-xl font-bold text-gold mb-2">{v.title}</h3>
-                <p className="text-cream/80 font-sans text-sm leading-relaxed">{v.desc}</p>
-              </div>
-            ))}
+            {values.map((v, i) => {
+              const accents = ["var(--gold2)", "var(--crimson2)", "#fff", "var(--gold2)", "var(--crimson2)", "#fff"];
+              const accent = accents[i % accents.length];
+              return (
+                <div key={v.title} className="rounded-lg p-6 card-hover reveal" style={{ background: "var(--forest-muted, #265C2A)", borderTop: `4px solid ${accent}`, borderLeft: "1px solid rgba(184,146,42,0.15)", borderRight: "1px solid rgba(184,146,42,0.15)", borderBottom: "1px solid rgba(184,146,42,0.15)" }}>
+                  <h3 className="font-display text-xl font-bold mb-2" style={{ color: accent }}>{v.title}</h3>
+                  <p className="text-cream/80 font-sans text-sm leading-relaxed">{v.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -131,7 +135,7 @@ export default function AboutPage() {
       </section>
 
       {/* MEET THE BISHOP */}
-      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
+      <section className="py-20 px-4 md:px-10 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Meet Our Leaders</p>
