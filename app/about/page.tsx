@@ -38,7 +38,7 @@ export default function AboutPage() {
       </section>
 
       {/* VISION & MISSION */}
-      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
+      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="reveal" style={{ borderLeft: "4px solid var(--crimson2)", paddingLeft: 24 }}>
@@ -71,7 +71,7 @@ export default function AboutPage() {
       </section>
 
       {/* CORE VALUES */}
-      <section className="bg-forest py-20 px-4 md:px-10 lg:px-20">
+      <section className="bg-forest py-20 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14 reveal">
             <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">What Drives Us</p>
@@ -123,7 +123,7 @@ export default function AboutPage() {
       </section>
 
       {/* ANTHEM */}
-      <section className="bg-crimson py-16 px-4 md:px-10 lg:px-20">
+      <section className="bg-crimson py-16 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-2xl mx-auto text-center text-cream reveal">
           <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">Sing With Us</p>
           <h2 className="font-display text-4xl font-bold mb-6">Overcomers Anthem</h2>
@@ -135,7 +135,7 @@ export default function AboutPage() {
       </section>
 
       {/* MEET THE BISHOP */}
-      <section className="py-20 px-4 md:px-10 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
+      <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Meet Our Leaders</p>

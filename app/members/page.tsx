@@ -58,7 +58,7 @@ export default function MembersPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
+      <section className="bg-cream py-20 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-lg mx-auto">
           {/* How it works info box */}
           <div className="bg-cream-dark border-l-4 border-gold rounded-r-lg p-6 mb-8 reveal">

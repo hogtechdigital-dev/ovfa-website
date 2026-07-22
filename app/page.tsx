@@ -49,7 +49,7 @@ export default function HomePage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-forest-dark border-b border-gold/10 py-9 px-4 md:px-10 lg:px-20">
+      <section className="bg-forest-dark border-b border-gold/10 py-9 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-md mx-auto grid grid-cols-2 gap-6 text-center">
           {[
             ["8", "Active Branches"],
@@ -64,7 +64,7 @@ export default function HomePage() {
       </section>
 
       {/* WATCHWORD BANNER */}
-      <section className="bg-forest py-10 px-4 md:px-10 lg:px-20">
+      <section className="bg-forest py-10 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <Image src="/images/watchword.jpg" alt="2026 Watchword" width={260} height={200} className="rounded-lg border-4 border-gold object-cover shadow-xl" />
           <div className="text-cream text-center md:text-left">
@@ -77,7 +77,7 @@ export default function HomePage() {
       </section>
 
       {/* WELCOME FROM PASTOR */}
-      <section className="bg-cream-light py-20 px-4 md:px-10 lg:px-20">
+      <section className="bg-cream-light py-20 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14 reveal">
             <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">A Word from Our Shepherd</p>
@@ -114,7 +114,7 @@ export default function HomePage() {
       </section>
 
       {/* QUICK LINKS */}
-      <section className="bg-forest py-16 px-4 md:px-10 lg:px-20">
+      <section className="bg-forest py-16 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
