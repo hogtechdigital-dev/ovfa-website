@@ -414,6 +414,7 @@ footer{background:var(--dark);border-top:1px solid rgba(184,146,42,0.1);}
   .nav-wordmark-bot{font-size:7px;}
   .cs-strip{padding:32px 24px;}
   .cs-inner h3{font-size:22px;}
+  .evp-card{padding:26px 20px;}
   /* Hide desktop nav links, show hamburger */
   .nav-links{position:fixed;top:64px;left:0;right:0;background:rgba(10,31,12,0.98);flex-direction:column;align-items:stretch;padding:8px 16px 16px;gap:0;max-height:0;overflow:hidden;transition:max-height .35s ease;border-bottom:1px solid rgba(184,146,42,0.15);}
   .nav-links.open{max-height:520px;}
