@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-export default function StatCounter({ value, label }: { value: string; label: string }) {
+export default function StatCounter({ value, label, big }: { value: string; label: string; big?: boolean }) {
   const ref = useRef<HTMLParagraphElement>(null);
   const [display, setDisplay] = useState("0");
 
@@ -42,7 +42,7 @@ export default function StatCounter({ value, label }: { value: string; label: st
   }, []);
 
   return (
-    <p ref={ref} className="font-bebas text-4xl text-gold-light stat-glow leading-none mb-1 stat-count">
+    <p ref={ref} className={`font-bebas ${big ? "text-6xl md:text-7xl" : "text-4xl"} text-gold-light stat-glow leading-none mb-1 stat-count`}>
       {display}
     </p>
   );

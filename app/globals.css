@@ -926,7 +926,14 @@ p, li, span:not(.tsep):not(.ph-line):not(.eline):not(.wb-cite):not(.gi-lbl):not(
   to{opacity:1;transform:translateY(0);}
 }
 
-/* Duotone photo treatment — branded forest/gold tone, reveals full color on hover */
+/* Big colorful stat cards on homepage */
+.stat-card-big{
+  border-radius:16px; padding:44px 32px; text-align:center;
+  transition:transform .4s cubic-bezier(0.22,1,0.36,1), box-shadow .4s ease;
+}
+.stat-card-icon{display:flex; justify-content:center; margin-bottom:14px; transition:transform .4s ease;}
+.stat-card-big:hover{transform:translateY(-10px) scale(1.03);}
+.stat-card-big:hover .stat-card-icon{transform:scale(1.15) rotate(-6deg);}
 .duotone{position:relative;overflow:hidden;}
 .duotone img{filter:grayscale(1) contrast(1.15);transition:filter .6s ease;}
 .duotone::after{

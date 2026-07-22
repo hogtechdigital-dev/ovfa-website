@@ -51,15 +51,20 @@ export default function HomePage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-forest-dark border-b border-gold/10 py-9 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div className="grid grid-cols-2 gap-6 text-center" style={{ maxWidth: 448, margin: "0 auto" }}>
+      <section className="py-16 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, var(--dark) 0%, var(--forest3) 100%)" }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8" style={{ maxWidth: 760, margin: "0 auto" }}>
           {[
-            ["8", "Active Branches"],
-            ["25+", "Years of Ministry"],
-          ].map(([num, label]) => (
-            <div key={label} className="px-4 border-r border-gold/10 last:border-r-0">
-              <StatCounter value={num} label={label} />
-              <p className="text-cream/40 font-sans text-[10px] tracking-[0.24em] uppercase">{label}</p>
+            { num: "8", label: "Active Branches", icon: <Church size={38} />, gradient: "linear-gradient(135deg, var(--forest2) 0%, var(--forest) 100%)", ring: "var(--gold2)" },
+            { num: "25+", label: "Years of Ministry", icon: <Calendar size={38} />, gradient: "linear-gradient(135deg, var(--crimson2) 0%, var(--crimson) 100%)", ring: "var(--gold3)" },
+          ].map((s) => (
+            <div
+              key={s.label}
+              className="stat-card-big reveal"
+              style={{ background: s.gradient, boxShadow: `0 0 0 1px ${s.ring}30, 0 20px 50px rgba(0,0,0,0.35)` }}
+            >
+              <div className="stat-card-icon" style={{ color: s.ring }}>{s.icon}</div>
+              <StatCounter value={s.num} label={s.label} big />
+              <p className="text-cream/85 font-sans text-sm tracking-[0.22em] uppercase mt-2 font-semibold">{s.label}</p>
             </div>
           ))}
         </div>
