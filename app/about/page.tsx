@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 const branches = [
-  { name: "CITY OF TRUTH", address: "No 3, Church Road, Off Oba-Erediawa Street, Evbologun, Benin City." },
-  { name: "DOMINION CENTRE", address: "No. 10, Osagie Street, Off Pathfinder/Oseye Street, Oka 4, Benin City." },
-  { name: "HOUSE OF FAVOUR", address: "No 8, Church Road, Off Osagiede Street, Ogua Community, Benin City." },
-  { name: "POTTER'S HOUSE", address: "3rd Lane, Off Ighiwisi, Off Upper Sokponba Road, Egba Community, Benin City." },
-  { name: "MOUNT ZION", address: "Oka 3, After Network Max, Off Upper Sokponba Road, Benin City." },
-  { name: "POWER HOUSE", address: "Utizi Road, Opp. Sam Osas Pri. Sch., Off Upper Sokponba Rd., Benin City." },
-  { name: "GERMANY BRANCH 1", address: "Albert-Seidl-Straße 8, 84359, Simbach am Inn, Germany." },
-  { name: "GERMANY BRANCH 2", address: "Herzog Georg Platz 1, 84524, Neuötting, Germany." },
+  { name: "City of Truth", address: "No 3, Church Road, Off Oba-Erediawa Street, Evbologun, Benin City." },
+  { name: "Dominion Centre", address: "No. 10, Osagie Street, Off Pathfinder/Oseye Street, Oka 4, Benin City." },
+  { name: "House of Favour", address: "No 8, Church Road, Off Osagiede Street, Ogua Community, Benin City." },
+  { name: "Potter's House", address: "3rd Lane, Off Ighiwisi, Off Upper Sokponba Road, Egba Community, Benin City." },
+  { name: "Mount Zion", address: "Oka 3, After Network Max, Off Upper Sokponba Road, Benin City." },
+  { name: "Power House", address: "Utizi Road, Opp. Sam Osas Pri. Sch., Off Upper Sokponba Rd., Benin City." },
+  { name: "Germany Branch 1", address: "Albert-Seidl-Straße 8, 84359, Simbach am Inn, Germany." },
+  { name: "Germany Branch 2", address: "Herzog Georg Platz 1, 84524, Neuötting, Germany." },
 ];
 
 const values = [
@@ -90,14 +90,15 @@ export default function AboutPage() {
       </section>
 
       {/* HISTORY */}
-      <section className="bg-cream-light py-20 px-4 md:px-10 lg:px-20">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-14 reveal">
-            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">The Chronicle</p>
-            <h2 className="font-display text-4xl font-bold text-forest">Our History</h2>
-            <div className="divider"></div>
+      <section className="section bg-cream-light">
+        <div className="section-inner" style={{ maxWidth: 820 }}>
+          <div className="mb-14 reveal">
+            <p className="label"><span className="ln" />The Chronicle</p>
+            <h2 className="sec-title">Our <em>History</em></h2>
+            <div className="divbar" />
+            <p className="sec-sub" style={{ maxWidth: 660 }}>From a roofless building with 11 people to 8 branches across Nigeria and Germany — this is the story of God&apos;s faithfulness.</p>
           </div>
-          <div className="space-y-10 font-sans text-gray-700 leading-relaxed">
+          <div className="timeline">
             {[
               { heading: "How It All Started", body: "Overcomers Family Assembly International Incorporated started like a gentle flame from an uncompleted building without roof or windows at Upper Sakponba Road, Benin City. The first service was a prayer meeting held on the 30th of December with 11 persons in attendance. The next service on the 31st of December — also a New Year's Eve service — witnessed a large turnout: 156 adults and 60 children in attendance, marking the beginning of a new dawn." },
               { heading: "Weathering the Initial Storm", body: "On inception of the ministry, God raised men like Elder Gabriel Ezomo of blessed memory (who donated 99 iron seats) and Rev. Omon Ajari of Courage Print (who donated the first signboard). Musical instruments were rented from local bands for three months before the church purchased its own sets." },
@@ -105,10 +106,11 @@ export default function AboutPage() {
               { heading: "Running with the Vision", body: "With a vision of 'Reaching the world with the Gospel of the Kingdom,' the Visioneer knew he had a lot to do. He raised up men and women whom he constantly took on different training programmes so they could serve as his extended arms. He organised monthly programmes like Solution Night (every last Friday), Prayer Rain (every 1st Saturday), and series of leadership seminars. These have become a great blessing to thousands of individuals within and outside the country, and have been popularised by series of miracles associated with them.\n\nHe still saw the need to reach out to the larger society, hence the programme 'Voice of Overcomers' on KU FM every Sunday morning at 6:30am — a radio arm of Overcomers Family Assembly aired over 15 states in Nigeria. His aim: to reach out to all — big, small, poor, rich, humble, proud, simple and complex individuals alike.\n\nTo the glory of God, it has been a smooth ride. The church went into publication of tracts for evangelism and the Overcomers Devotional Manual. In these publications, topical spiritual issues are taught that aid, provide and direct humanity on the path of self-actualisation and preparedness to face the challenges of running the Christian race and await the second coming of our Lord Jesus Christ. Today, the church has expanded with eight (8) branches — six (6) in Benin City, Edo State, Nigeria, and two (2) in Germany." },
               { heading: "The Prayer Cathedral Building", body: "Overcomers Family Assembly was officially inaugurated on the 30th of January 2000 during her first year anniversary celebration by Bishop Charles Ighele of Holy Spirit Mission and presenter of the Marriage and Family Intimacy (MAFI) TV Programme. However, the owner of the property where the ministry started relocated the church to the back building near the toilet, and this led to the movement of the church to a leased land along Upper Sakponba Road, owned by Chief Eribo of Eribo Printers, for two years.\n\nOn the 20th of April 2004, the church took the bull by the horn. Faced with challenges from the leased land, she moved to her permanent site during her convention — then it was like a forest. There was a decline in membership, but the Visioneer took the challenges and went into a series of all-night prayer meetings, which is called 'Solution Night' today — a programme which has become a city of its own.\n\nOur father in the Lord, the President of Gospel Light International Ministries (GLIM) and President of the Pentecostal Fellowship of Nigeria (PFN), Most Rev. Dr. F. I. Omobude, laid the foundation of this edifice. To the glory of God, the hand that laid the foundation is the same hand that dedicated it — hallelujah! The beauty and uniqueness of every ministry is tied to the peculiarity of its shepherd; indeed, behind every successful church is a prayerful, hardworking, servant leader and a man of great God. Bishop Albert Amenaghawon Asemota is the man behind it. He is humble, unassuming, passionate and zealous for Kingdom business.\n\nIt is worthy to note that if it was not God who built this house, it would have taken many years to accomplish — but because He was involved, the project was completed in due season. Remarkably, in the period of six months — February to July — during the roofing, the rain did not affect a single service. It rained either before or after each service, but never during, until the roofing was completed. God is too wonderful and faithful!" },
             ].map((s) => (
-              <div key={s.heading} className="reveal border-l-4 border-gold pl-6">
-                <h3 className="font-display text-2xl font-bold text-forest mb-3">{s.heading}</h3>
+              <div key={s.heading} className="tl-item reveal">
+                <div className="tl-dot" />
+                <h3 className="tl-head">{s.heading}</h3>
                 {s.body.split("\n\n").map((para, i) => (
-                  <p key={i} className="mb-3">{para}</p>
+                  <p key={i} className="tl-body" style={{ marginBottom: 14 }}>{para}</p>
                 ))}
               </div>
             ))}
@@ -172,19 +174,20 @@ export default function AboutPage() {
       </section>
 
       {/* BRANCHES */}
-      <section className="bg-cream-dark py-20 px-4 md:px-10 lg:px-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14 reveal">
-            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">We Are Growing</p>
-            <h2 className="font-display text-4xl font-bold text-forest">Our Branches</h2>
-            <div className="divider"></div>
-            <p className="text-gray-600 font-sans mt-3">8 branches — 6 in Nigeria, 2 in Germany</p>
+      <section className="section bg-cream-dark">
+        <div className="section-inner">
+          <div className="tc" style={{ marginBottom: 56 }}>
+            <p className="label" style={{ justifyContent: "center" }}><span className="ln" />We Are Growing</p>
+            <h2 className="sec-title tc">Our <em>Branches</em></h2>
+            <div className="divbar c" />
+            <p className="sec-sub tc">8 branches — 6 in Benin City, Nigeria &amp; 2 in Germany</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {branches.map((b) => (
-              <div key={b.name} className="bg-cream rounded-lg p-5 border-t-4 border-forest card-hover reveal">
-                <h3 className="font-display text-lg font-bold text-forest mb-2">{b.name}</h3>
-                <p className="text-gray-600 font-sans text-sm leading-relaxed">{b.address}</p>
+          <div className="branches-grid">
+            {branches.map((b, i) => (
+              <div key={b.name} className={`branch-card${i >= 6 ? " intl" : ""}`}>
+                <div className="branch-icon">⛪</div>
+                <div className="branch-name">{b.name}</div>
+                <p className="branch-addr">{b.address}</p>
               </div>
             ))}
           </div>

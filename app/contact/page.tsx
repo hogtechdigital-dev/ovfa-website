@@ -127,15 +127,27 @@ export default function ContactPage() {
       </section>
 
       {/* Social strip */}
-      <section className="bg-forest-dark py-12 px-4 md:px-10 lg:px-20">
-        <div className="max-w-4xl mx-auto text-center reveal">
-          <h3 className="font-display text-2xl font-bold text-cream mb-4">Follow Us Online</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.facebook.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg> Facebook</a>
-            <span className="text-cream/30">|</span>
-            <a href="https://instagram.com/ovfa.prayerpalace" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg> @ovfa.prayerpalace</a>
-            <span className="text-cream/30">|</span>
-            <a href="https://youtube.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="text-cream hover:text-gold font-sans text-sm transition-colors inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.9 5 12 5 12 5h0s-3.9 0-6.9.2c-.4 0-1.3.1-2.1.9C2.4 6.7 2.2 8.2 2.2 8.2S2 10 2 11.7v1.6c0 1.7.2 3.5.2 3.5s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.7.2 7.1.2 7.1.2s3.9 0 6.9-.2c.4 0 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.5v-1.6C22 10 21.8 8.2 21.8 8.2ZM9.9 14.9V8.9l5.4 3-5.4 3Z"/></svg> YouTube</a>
+      <section className="section bg-forest">
+        <div className="section-inner tc">
+          <p className="label gl" style={{ justifyContent: "center" }}><span className="ln" />Can&apos;t Make It In Person?</p>
+          <h2 className="sec-title light tc">Follow Us <em style={{ color: "var(--gold)" }}>Online</em></h2>
+          <div className="divbar c gold" style={{ marginBottom: 30 }} />
+          <p style={{ fontFamily: "'Oswald',sans-serif", fontSize: 15, color: "rgba(255,255,255,0.6)", maxWidth: 480, margin: "0 auto 40px", lineHeight: 1.8 }}>
+            Join our live streams on Facebook and YouTube, and follow us on Instagram for daily inspiration.
+          </p>
+          <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="https://www.facebook.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="btn" style={{ background: "#1877F2", color: "#fff", display: "inline-flex", alignItems: "center", gap: 8 }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/ovfa.prayerpalace" target="_blank" rel="noopener" className="btn" style={{ background: "linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)", color: "#fff", display: "inline-flex", alignItems: "center", gap: 8 }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              Instagram
+            </a>
+            <a href="https://youtube.com/overcomersfamilyassembly" target="_blank" rel="noopener" className="btn" style={{ background: "#FF0000", color: "#fff", display: "inline-flex", alignItems: "center", gap: 8 }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube
+            </a>
           </div>
         </div>
       </section>

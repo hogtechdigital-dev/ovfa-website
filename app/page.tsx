@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Heart, BookOpen, MapPin, Phone, ArrowRight, CloudRain, Church, BookMarked } from "lucide-react";
+import { Calendar, Heart, BookOpen, MapPin, Phone, Mail, ArrowRight, CloudRain, Church, BookMarked, HandHeart } from "lucide-react";
 
 const events = [
-  { title: "Prayer Rain", date: "1st Saturday of Every Month", time: "7:00am", venue: "Prayer Cathedral, HQ", icon: <CloudRain size={34} /> },
-  { title: "Sunday Service", date: "Every Sunday", time: "7:00am – 9:30am", venue: "All Branches", icon: <Church size={34} /> },
-  { title: "Bible Study", date: "Every Wednesday", time: "5:00pm – 6:00pm", venue: "All Branches", icon: <BookMarked size={34} /> },
+  { title: "Prayer Rain", date: "1st Saturday Monthly", time: "7:00am – 9:00am", venue: "All Branches", icon: <CloudRain size={34} />, accent: "red" },
+  { title: "Sunday Service", date: "Every Sunday", time: "7:00am – 9:30am", venue: "HQ & All 8 Branches", icon: <Church size={34} />, accent: "gold" },
+  { title: "Bible Study", date: "Every Wednesday", time: "5:00pm – 6:00pm", venue: "All Branches", icon: <BookMarked size={34} />, accent: "" },
+  { title: "Friday Prayer Meeting", date: "Every Friday", time: "5:00pm – 6:00pm", venue: "All Branches", icon: <HandHeart size={34} />, accent: "red" },
 ];
 
 export default function HomePage() {
@@ -132,40 +133,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* UPCOMING EVENTS */}
-      <section className="bg-cream py-20 px-4 md:px-10 lg:px-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14 reveal">
-            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Be Part of Something Greater</p>
-            <h2 className="font-display text-4xl font-bold text-forest">Upcoming Events</h2>
-            <div className="divider"></div>
+      {/* OUR REGULAR PROGRAMMES */}
+      <section className="section bg-cream2">
+        <div className="section-inner">
+          <div className="tc" style={{ marginBottom: 56 }}>
+            <p className="label" style={{ justifyContent: "center" }}><span className="ln" />Be Part of Something Greater</p>
+            <h2 className="sec-title tc">Our Regular <em>Programmes</em></h2>
+            <div className="divbar c" />
           </div>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto max-w-4xl mx-auto">
+          <div className="evp-grid four">
             {events.map((e) => (
-              <div key={e.title} className="bg-cream-light border border-cream-dark rounded-lg p-6 card-hover reveal">
-                <div className="text-gold mb-4 icon-hover-rotate">{e.icon}</div>
-                <h3 className="font-display text-xl font-bold text-forest mb-2">{e.title}</h3>
-                <p className="text-crimson font-sans text-sm font-semibold mb-1">{e.date}</p>
-                <p className="text-gray-600 font-sans text-sm mb-1">{e.time}</p>
-                <p className="flex items-center gap-1 text-gray-500 text-sm font-sans mt-3"><MapPin size={13}/>{e.venue}</p>
+              <div key={e.title} className={`evp-card${e.accent ? " " + e.accent : ""}`}>
+                <span className="evp-icon" style={{ color: "var(--gold)" }}>{e.icon}</span>
+                <h3 className="evp-title">{e.title}</h3>
+                <p className="evp-date">{e.date}</p>
+                <p className="evp-time">{e.time}</p>
+                <p className="evp-venue"><MapPin size={12} style={{ display: "inline", marginRight: 4 }} />{e.venue}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <Link href="/events" className="inline-flex items-center gap-2 bg-forest text-cream font-sans font-bold px-8 py-3 rounded-sm tracking-widest uppercase text-sm hover:bg-forest-dark transition-colors">
-              See All Events <ArrowRight size={16}/>
-            </Link>
+          <div className="tc" style={{ marginTop: 48 }}>
+            <Link href="/events" className="btn btn-forest">See All Programmes →</Link>
           </div>
         </div>
       </section>
 
       {/* GALLERY PREVIEW */}
-      <section className="bg-cream-dark py-20 px-4 md:px-10 lg:px-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 reveal">
-            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Life at Prayer Cathedral</p>
-            <h2 className="font-display text-4xl font-bold text-forest">Gallery</h2>
-            <div className="divider"></div>
+      <section className="section bg-dark">
+        <div className="section-inner">
+          <div className="tc" style={{ marginBottom: 52 }}>
+            <p className="label gl" style={{ justifyContent: "center" }}><span className="ln" />Life at Prayer Cathedral</p>
+            <h2 className="sec-title light tc">Photo <em style={{ color: "var(--gold)" }}>Gallery</em></h2>
+            <div className="divbar c gold" />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
@@ -184,30 +183,22 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <Link href="/gallery" className="inline-flex items-center gap-2 border-2 border-forest text-forest font-sans font-bold px-8 py-3 rounded-sm tracking-widest uppercase text-sm hover:bg-forest hover:text-cream transition-colors">
-              View Full Gallery <ArrowRight size={16}/>
-            </Link>
+          <div className="tc" style={{ marginTop: 48 }}>
+            <Link href="/gallery" className="btn btn-ghost-gold">View Full Gallery →</Link>
           </div>
         </div>
       </section>
 
       {/* CONTACT STRIP */}
-      <section className="bg-crimson py-10 px-4 md:px-10 lg:px-20">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div className="cs-strip">
+        <div className="cs-inner">
           <div>
-            <h3 className="font-display text-2xl font-bold text-cream">Need to Reach Us?</h3>
-            <p className="text-cream/80 font-sans text-sm mt-1 flex flex-wrap gap-3 justify-center md:justify-start">
-              <span className="flex items-center gap-1"><Phone size={13}/> 08023397352</span>
-              <span className="flex items-center gap-1"><Phone size={13}/> 08053147106</span>
-              <span className="flex items-center gap-1"><Phone size={13}/> 08165424706</span>
-            </p>
+            <h3>We&apos;d Love to Hear from You</h3>
+            <p><Phone size={13} style={{ display: "inline", marginRight: 4 }} />08023397352 · 08053147106 · 07033287556 · 08165424706 &nbsp;·&nbsp; <Mail size={13} style={{ display: "inline", marginRight: 4 }} /> overcomersfamilyassembly@rocketmail.com</p>
           </div>
-          <Link href="/contact" className="bg-cream text-crimson font-sans font-bold px-8 py-3 rounded-sm tracking-widest uppercase text-sm hover:bg-cream-dark transition-colors whitespace-nowrap">
-            Contact Us
-          </Link>
+          <Link href="/contact" className="btn btn-cream">Get in Touch →</Link>
         </div>
-      </section>
+      </div>
     </>
   );
 }
