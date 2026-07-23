@@ -933,6 +933,27 @@ p, li, span:not(.tsep):not(.ph-line):not(.eline):not(.wb-cite):not(.gi-lbl):not(
   to{opacity:1;transform:translateY(0);}
 }
 
+/* Featured Event card (e.g. Destiny Convention banner on Events page) */
+.featured-event-card{
+  display:grid; grid-template-columns:1.1fr 1fr; gap:0;
+  background:rgba(10,31,12,0.55); border-radius:20px; overflow:hidden;
+  border:1px solid rgba(240,204,120,0.35);
+  box-shadow:0 25px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(240,204,120,0.08);
+}
+.featured-event-img{position:relative; overflow:hidden;}
+.featured-event-img img{display:block; width:100%; height:100%; object-fit:cover;}
+.featured-event-info{padding:40px 36px; display:flex; flex-direction:column; justify-content:center;}
+.fed-row{
+  display:flex; align-items:flex-start; gap:10px; color:rgba(248,244,238,0.85);
+  font-family:'Oswald',sans-serif; font-size:14.5px; padding:10px 0;
+  border-bottom:1px solid rgba(240,204,120,0.12);
+}
+.fed-row:last-child{border-bottom:none;}
+@media (max-width:900px){
+  .featured-event-card{grid-template-columns:1fr;}
+  .featured-event-info{padding:30px 24px;}
+}
+
 /* Big colorful stat cards on homepage */
 .stat-card-big{
   border-radius:16px; padding:44px 32px; text-align:center;

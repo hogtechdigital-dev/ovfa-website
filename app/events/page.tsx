@@ -75,6 +75,47 @@ export default function EventsPage() {
         </div>
       </section>
 
+      {/* FEATURED EVENT — DESTINY CONVENTION 2026 */}
+      <section className="py-16 px-4 sm:px-8 md:px-12 lg:px-20 grain" style={{ background: "linear-gradient(135deg, var(--dark) 0%, var(--crimson2) 130%)", position: "relative" }}>
+        <div style={{ maxWidth: 1180, margin: "0 auto", position: "relative", zIndex: 2 }}>
+          <div className="tc reveal" style={{ marginBottom: 36 }}>
+            <p className="label" style={{ justifyContent: "center", color: "var(--gold3)" }}>
+              <span className="ln" style={{ background: "var(--gold3)" }} />
+              Upcoming Convention
+              <span className="ln" style={{ background: "var(--gold3)" }} />
+            </p>
+            <h2 className="sec-title light tc">Destiny Convention <em style={{ color: "var(--gold3)" }}>2026</em></h2>
+          </div>
+
+          <div className="featured-event-card reveal">
+            <div className="featured-event-img">
+              <Image src="/images/destiny-convention-2026.jpg" alt="Destiny Convention 2026 — Jesus Is Enough" width={1280} height={640} className="w-full h-auto" priority />
+            </div>
+            <div className="featured-event-info">
+              <p className="text-gold-light text-xs tracking-widest uppercase font-sans mb-2">Theme</p>
+              <h3 className="font-display text-3xl md:text-4xl font-bold text-cream mb-5" style={{ lineHeight: 1.2 }}>
+                &ldquo;Jesus Is <em style={{ fontStyle: "italic", color: "var(--gold3)" }}>Enough</em>&rdquo;
+              </h3>
+              <div className="featured-event-details">
+                <div className="fed-row">
+                  <Calendar size={18} className="text-gold shrink-0" />
+                  <span>Wednesday 12th &ndash; Sunday 16th August</span>
+                </div>
+                <div className="fed-row">
+                  <Clock size={18} className="text-gold shrink-0" />
+                  <span>4:30pm Daily &middot; Sunday 7:00am</span>
+                </div>
+                <div className="fed-row">
+                  <MapPin size={18} className="text-gold shrink-0" style={{ marginTop: 2 }} />
+                  <span>540, Opposite Coin Oil Filling Station, Upper Sokponba, Benin City</span>
+                </div>
+              </div>
+              <a href="/contact" className="btn btn-red" style={{ marginTop: 28, display: "inline-block" }}>Get Directions &amp; Enquiries &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
