@@ -101,8 +101,8 @@ export default function HomePage() {
                 <Image src="/images/bishop-main.jpg" alt="Bishop Albert Ame Asemota" width={480} height={550} className="rounded-lg object-cover w-full shadow-2xl" style={{objectPosition:"top"}} />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-forest to-transparent p-6 rounded-b-lg">
                   <p className="text-gold font-display font-bold text-xl">Bishop Albert Ame Asemota</p>
-                  <p className="text-cream/80 text-sm font-sans">Founder & Presiding Bishop</p>
-                  <p className="text-cream/60 text-xs font-sans mt-1">State Treasurer<br />Pentecostal Fellowship of Nigeria, Edo State</p>
+                  <p className="text-cream/85 text-base font-playfair italic">Founder & Presiding Bishop</p>
+                  <p className="text-gold-light/90 text-sm font-playfair italic mt-1">State Treasurer,<br /><span className="text-cream/60">Pentecostal Fellowship of Nigeria, Edo State</span></p>
                 </div>
               </div>
             </div>

@@ -42,7 +42,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="reveal" style={{ borderLeft: "4px solid var(--crimson2)", paddingLeft: 24 }}>
-              <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Our Compass</p>
+              <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-3">Our Compass</p>
               <h2 className="font-display text-4xl font-bold text-forest mb-4">Vision</h2>
               <div className="divider" style={{margin:"1rem 0"}}></div>
               <p className="text-2xl font-display italic text-gray-700 leading-relaxed">
@@ -51,7 +51,7 @@ export default function AboutPage() {
               <p className="text-gray-500 font-sans text-sm mt-3">— Matthew 24:14</p>
             </div>
             <div className="reveal" style={{ borderLeft: "4px solid var(--gold2)", paddingLeft: 24 }}>
-              <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Our Purpose</p>
+              <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-3">Our Purpose</p>
               <h2 className="font-display text-4xl font-bold text-forest mb-4">Mission</h2>
               <div className="divider" style={{margin:"1rem 0"}}></div>
               <ul className="space-y-4">
@@ -74,11 +74,11 @@ export default function AboutPage() {
       <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20 grain" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--forest3) 100%)", position: "relative" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
-            <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">What Drives Us</p>
+            <p className="text-gold text-xs tracking-widest uppercase font-sans mb-3">What Drives Us</p>
             <h2 className="font-display text-4xl font-bold text-cream">Core Values</h2>
             <div className="divider"></div>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((v, i) => {
               const accents = ["var(--gold2)", "var(--crimson2)", "#fff", "var(--gold2)", "var(--crimson2)", "#fff"];
               const accent = accents[i % accents.length];
@@ -123,9 +123,9 @@ export default function AboutPage() {
       </section>
 
       {/* ANTHEM */}
-      <section className="bg-crimson py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+      <section className="bg-crimson py-20 px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="text-center text-cream reveal" style={{ maxWidth: 672, margin: "0 auto" }}>
-          <p className="text-gold text-xs tracking-widest uppercase font-sans mb-2">Sing With Us</p>
+          <p className="text-gold text-xs tracking-widest uppercase font-sans mb-3">Sing With Us</p>
           <h2 className="font-display text-4xl font-bold mb-6">Overcomers Anthem</h2>
           <div className="bg-crimson-dark rounded-lg p-8 font-display text-2xl md:text-3xl italic leading-loose">
             <p>We have overcome,<br />We have overcome,<br />We have overcome by the blood of the Lamb.<br />And our testimony,<br />We have overcome by the blood.</p>
@@ -138,7 +138,7 @@ export default function AboutPage() {
       <section className="py-20 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(160deg, #F8F4EE 0%, #EFE9DC 100%)" }}>
         <div style={{ maxWidth: 1152, margin: "0 auto" }}>
           <div className="text-center mb-14 reveal">
-            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Meet Our Leaders</p>
+            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-3">Meet Our Leaders</p>
             <h2 className="font-display text-4xl font-bold text-forest">The Bishop & His Wife</h2>
             <div className="divider"></div>
           </div>
@@ -149,8 +149,8 @@ export default function AboutPage() {
                 <Image src="/images/bishop-new-1.jpg" alt="Bishop Albert Ame Asemota" width={500} height={550} className="rounded-lg object-cover w-full shadow-xl" style={{objectPosition:"top", maxHeight:"480px"}} />
               </div>
               <h3 className="font-display text-3xl font-bold text-forest">Bishop Albert Ame Asemota</h3>
-              <p className="text-gold font-sans text-sm tracking-wide uppercase mb-4">Founder & Presiding Bishop</p>
-              <div className="text-gray-700 font-sans leading-relaxed space-y-3">
+              <p className="text-gold font-playfair italic text-base mb-4">Founder & Presiding Bishop</p>
+              <div className="text-gray-700 font-sans leading-loose space-y-5">
                 <p>He is married to Rev. (Mrs.) Queen Osayabamwen Asemota and they are blessed with four promising children. He is an ordained Minister, a consecrated Bishop, and a member of the United International Association of Pentecostal Bishops (UNIAPEB).</p>
                 <p>He has a passion to win souls for Christ and is committed to the Kingdom business. He is a seasoned preacher, an administrator per excellence and a man of integrity. His messages are honest, straight-out and modest. He is the Host of Voice of OVERCOMERS on KU FM in Benin City, Nigeria every Sunday Morning at 6:30am.</p>
                 <p>Bishop Albert presides over the following fellowships:</p>
@@ -168,8 +168,8 @@ export default function AboutPage() {
                 <Image src="/images/bishops-wife.jpg" alt="Rev. Mrs. Queen Asemota" width={500} height={550} className="rounded-lg object-cover w-full shadow-xl" style={{objectPosition:"top", maxHeight:"480px"}} />
               </div>
               <h3 className="font-display text-3xl font-bold text-forest">Rev. (Mrs.) Queen Osayabamwen Asemota</h3>
-              <p className="text-gold font-sans text-sm tracking-wide uppercase mb-4">Co-Founder & First Lady</p>
-              <p className="text-gray-700 font-sans leading-relaxed">
+              <p className="text-gold font-playfair italic text-base mb-4">Co-Founder & First Lady</p>
+              <p className="text-gray-700 font-sans leading-loose">
                 Rev. (Mrs.) Queen Osayabamwen Asemota is the beloved First Lady and co-visioner of Overcomers Family Assembly. A woman of deep faith, grace, and spiritual strength, she stands firmly alongside the Bishop in advancing the Kingdom work. Her life is a testimony of God&apos;s faithfulness, and her ministry touches countless hearts across the congregation and beyond.
               </p>
             </div>

@@ -41,7 +41,7 @@ export default function GivingPage() {
       </section>
 
       {/* Scripture */}
-      <section className="py-10 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--forest3) 100%)" }}>
+      <section className="py-14 px-4 sm:px-8 md:px-12 lg:px-20" style={{ background: "linear-gradient(135deg, var(--forest) 0%, var(--forest3) 100%)" }}>
         <div className="text-center text-cream reveal" style={{ maxWidth: 768, margin: "0 auto" }}>
           <p className="font-display text-2xl italic">"Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over..."</p>
           <p className="text-gold text-sm font-sans mt-3">— Luke 6:38</p>
@@ -52,7 +52,7 @@ export default function GivingPage() {
         <div className="grid lg:grid-cols-2 gap-14" style={{ maxWidth: 1152, margin: "0 auto" }}>
           {/* Form */}
           <div className="reveal">
-            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Online Giving</p>
+            <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-3">Online Giving</p>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-forest mb-6">Make a Donation</h2>
             <div className="divider" style={{margin:"0 0 2rem"}}></div>
 
@@ -65,7 +65,7 @@ export default function GivingPage() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 {error && <p className="text-crimson text-sm font-sans bg-crimson/10 px-4 py-3 rounded">{error}</p>}
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-xs font-sans uppercase tracking-widest text-gray-500 mb-1">Full Name *</label>
                     <input required className="w-full border border-cream-dark rounded px-4 py-3 font-sans text-sm bg-cream-light focus:outline-none focus:ring-2 focus:ring-forest" value={form.name} onChange={e => setForm({...form, name: e.target.value})} placeholder="Your full name" />
@@ -79,7 +79,7 @@ export default function GivingPage() {
                   <label className="block text-xs font-sans uppercase tracking-widest text-gray-500 mb-1">Email</label>
                   <input type="email" className="w-full border border-cream-dark rounded px-4 py-3 font-sans text-sm bg-cream-light focus:outline-none focus:ring-2 focus:ring-forest" value={form.email} onChange={e => setForm({...form, email: e.target.value})} placeholder="your@email.com" />
                 </div>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-xs font-sans uppercase tracking-widest text-gray-500 mb-1">Giving Category *</label>
                     <select required className="w-full border border-cream-dark rounded px-4 py-3 font-sans text-sm bg-cream-light focus:outline-none focus:ring-2 focus:ring-forest" value={form.category} onChange={e => setForm({...form, category: e.target.value})}>
@@ -106,7 +106,7 @@ export default function GivingPage() {
           {/* Bank Details */}
           <div className="space-y-8 reveal">
             <div>
-              <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-2">Alternative</p>
+              <p className="text-crimson text-xs tracking-widest uppercase font-sans mb-3">Alternative</p>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-forest mb-6">Bank Transfer</h2>
               <div className="divider" style={{margin:"0 0 2rem"}}></div>
             </div>
@@ -126,7 +126,7 @@ export default function GivingPage() {
 
             <div className="bg-cream-dark rounded-lg p-6" style={{ marginTop: 32 }}>
               <h4 className="font-display text-xl font-bold text-forest mb-3">Giving Categories</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {categories.map((c, i) => {
                   const pillColors = ["var(--gold)", "var(--crimson2)", "var(--forest2)"];
                   const bg = pillColors[i % pillColors.length];
